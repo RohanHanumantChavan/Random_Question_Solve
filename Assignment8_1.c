@@ -1,0 +1,52 @@
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+// 
+// input : 75
+// Output : medium
+//
+// Input : 101
+// Output: greater
+//
+//  Input : 50
+//  Output : small
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//   Application Name : Accept n Number From User and if number is less than 50 then print 
+//                        small if it is greater than 50 and less than than print medium if it is greater than 100 then print large
+//    Input : Integer
+//    Output : Integer
+//    Author : Rohan Hanumant Chavan
+//    Date : 07/11/2022
+//
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+   #include<stdio.h>
+   void CheckNumber(int iNo)
+   {
+      if(iNo < 50)
+      {
+        printf("%d Number is Small",iNo);
+      }
+      if((iNo > 50) && (iNo < 100))
+      {
+          printf(" %d Number is Medium",iNo);
+      }
+
+      if(iNo > 100)
+      {
+        printf("  %d Number is greater",iNo);
+      }
+   }
+   int main()
+  {
+    int iValue = 0;
+
+    printf("Enter the number \n");
+    scanf("%d",&iValue);
+
+    CheckNumber(iValue);
+    return 0;
+  }  
